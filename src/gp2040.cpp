@@ -121,7 +121,7 @@ void GP2040::setup() {
 	addons.LoadAddon(new RotaryEncoderInput());
 	addons.LoadAddon(new PCF8575Addon());
 	addons.LoadAddon(new TG16padInput());
-	addons.LoadAddon(new PCA9685Leds(), CORE0_INPUT);
+	addons.LoadAddon(new PCA9685Leds());
 
 	// Input override addons
 	addons.LoadAddon(new ReverseInput());
