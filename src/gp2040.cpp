@@ -13,6 +13,7 @@
 
 // Inputs for Core0
 #include "addons/analog.h"
+#include "addons/pca9685_leds.h"
 #include "addons/bootsel_button.h"
 #include "addons/focus_mode.h"
 #include "addons/dualdirectional.h"
@@ -120,6 +121,7 @@ void GP2040::setup() {
 	addons.LoadAddon(new RotaryEncoderInput());
 	addons.LoadAddon(new PCF8575Addon());
 	addons.LoadAddon(new TG16padInput());
+	addons.LoadAddon(new PCA9685Leds(), CORE0_INPUT);
 
 	// Input override addons
 	addons.LoadAddon(new ReverseInput());
